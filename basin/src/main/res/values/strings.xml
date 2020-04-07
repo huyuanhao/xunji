@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">basin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  权限start -->
+    <string name="setting">去设置</string>
+    <string name="resume">授予</string>
+    <string name="cancel">取消</string>
+
+    <string name="title_dialog">权限提示</string>
+    <string name="message_permission_rationale"> 贷款么需要%1$s权限为您提供服务,是否授予权限</string>
+    <string name="message_permission_always_failed">您已禁止授予 贷款么%1$s权限,可能会造成功能不可用,如需使用前往设置</string>
+    <string name="message_setting_comeback">The user comes back from the settings page.</string>
+
+    <!--<string name="message_install_failed">Your phone is not allowed us to install apps.</string>-->
+    <string name="message_install_failed"> 贷款么需要应用安装权限为您提供服务,如需使用前往设置</string>
+
+    <!--  权限end   -->
+</resources>

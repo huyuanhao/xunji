@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg"
+    tools:context=".ui.LoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+        <ImageView
+            android:background="@mipmap/icon_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="222dp" />
+        <ImageView
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@mipmap/icon_login_logo"
+            android:layout_width="130dp"
+            android:visibility="visible"
+            android:layout_height="130dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:divider="@drawable/shape_divider_theme_press"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_login_phone" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:maxLength="11"
+
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:textColor="@color/color_theme"
+                    android:textColorHint="@color/color_remove"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_login_code" />
+
+                <EditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入验证码"
+                    android:maxLength="6"
+                    android:inputType="phone"
+                    android:textColor="@color/color_theme"
+                    android:textColorHint="@color/color_theme_press"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tvGetCode"
+                    android:textColor="@drawable/selector_tv_theme_press"
+                    android:text="获取验证码"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@mipmap/icon_login_password" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/etPassword"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="50dp"-->
+                    <!--android:layout_marginRight="50dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:digits="@string/digits"-->
+                    <!--android:hint="请设置6-16位登录密码"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:textColor="@color/color_theme"-->
+                    <!--android:textColorHint="@color/color_theme_press"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</RelativeLayout>-->
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_btn_c25_theme_press"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvAgreeCost"
+
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/selector_register_agree"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="同意 "
+                    android:textColor="#646464"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tvAgreementCost"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/agree_vip_des"
+                    android:textColor="@color/color_theme"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvAgree"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/selector_register_agree"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="同意 "
+                    android:textColor="#646464"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tvAgreement"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/agree_app_user_des"
+                    android:textColor="@color/color_theme"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

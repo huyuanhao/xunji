@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg"
+    tools:context=".ui.LoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+        <ImageView
+            android:background="@mipmap/icon_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="222dp" />
+        <ImageView
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@mipmap/icon_login_logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+    </FrameLayout>
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/llLogin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvLogin"
+                android:text="登录"
+                android:textColor="@drawable/selector_login_tab_tv_color"
+                android:textSize="18sp"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/vLogin"
+                android:layout_marginTop="3dp"
+                android:background="@color/color_theme"
+                android:layout_width="20dp"
+                android:layout_height="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRegister"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvRegister"
+                android:text="注册"
+                android:textColor="@drawable/selector_login_tab_tv_color"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/vRegister"
+                android:visibility="invisible"
+                android:layout_marginTop="3dp"
+                android:background="@color/color_theme"
+                android:layout_width="20dp"
+                android:layout_height="3dp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<include layout="@layout/fragment_login" />-->
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

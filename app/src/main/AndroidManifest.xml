@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jimetec.xunji">
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 抖音广告 -->
+    <!-- 必要权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 可选权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 可选，向开发者声明获取定位后，才可慎重添加此权限，穿山甲将依据此权限投放精准广告 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 如果有视频相关的广告且使用textureView播放，请务必添加，否则黑屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".push.MiPushActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@style/onePixelActivity"
+
+            >
+            </activity>
+        <activity
+            android:name=".ui.QueryTestActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.MobileContactActivity" />
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PopSelectContactActivity"
+            android:label=""
+            android:theme="@style/popContactStyleActivity" />
+        <activity
+            android:name=".ui.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SelectFriendContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ConfirmLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LocationWarnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MyLastTrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MyWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NewDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LastTrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AvatarActivity"
+            android:theme="@style/DialogActivity" />
+        <activity
+            android:name=".ui.IdeaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${action_host}"
+                    android:path="${action_splash}"
+                    android:scheme="${action_scheme}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".share.ShareActivity"
+            android:theme="@style/shareTheme" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${value_map}" />
+
+        <receiver android:name=".push.NotificationBroadcast" /> <!-- push start -->
+        <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- <service android:name=".push.MyNotificationService" /> -->
+        <!-- <service android:name=".push.UmengNotificationService" /> -->
+        <!-- <receiver android:name=".push.NotificationBroadcast" /> -->
+        <service android:name="com.amap.api.track.AMapTrackService" />
+        <service android:name="com.amap.api.location.APSService" /> <!-- 抖音 -->
+
+    </application>
+
+</manifest>

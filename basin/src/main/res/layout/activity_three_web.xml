@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        tools:text="标题标题标题标题标题标题标题标题标题标题标题"
+        android:ellipsize="end"
+        android:background="@color/colorPrimary"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<include layout="@layout/load_base_loading"/>-->
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_F7FDFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SearchLocationActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/statusbar_view_height"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/titleHeigh"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rlTitleLeft"
+            android:background="@drawable/selector_item_press_gray"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/ivTitleLeft"
+                android:src="@mipmap/icon_back_arrow_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/shape_add_care_bg"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_poi_search"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etSearch"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:hint="请输入搜索位置关键词"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#9AC1FF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <View
+            android:background="@color/color_D9D9D9"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv"
+            android:dividerHeight="1px"
+            android:divider="@color/color_D9D9D9"
+            android:listSelector="@drawable/selector_item_white_press_gray"
+            tools:listitem="@layout/item_search_poi_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <include layout="@layout/load_base_empty"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

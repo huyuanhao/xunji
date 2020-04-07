@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/statusbar_view_height"/>
+
+    <include layout="@layout/common_title"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:background="@drawable/selector_item_press_gray"
+            android:paddingLeft="@dimen/general_margin"
+            android:paddingRight="@dimen/general_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:text="邮箱地址"
+                android:textColor="@color/color_1C1C1C"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:text="jimetecmaster@outlook.com"
+                android:textSize="14sp"
+                android:textColor="@color/color_5d5d5d"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_wx"
+            android:background="@drawable/selector_item_press_gray"
+            android:paddingLeft="@dimen/general_margin"
+            android:paddingRight="@dimen/general_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:text="微信公众号"
+                android:textColor="@color/color_1C1C1C"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                tools:text="钱包"
+                android:textSize="14sp"
+                android:textColor="@color/color_5d5d5d"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_qq"
+            android:background="@drawable/selector_item_press_gray"
+            android:paddingLeft="@dimen/general_margin"
+            android:paddingRight="@dimen/general_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:text="客服QQ号"
+                android:textColor="@color/color_1C1C1C"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                tools:text="18181818"
+                android:textSize="15sp"
+                android:textColor="@color/color_5d5d5d"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_history"
+            android:background="@drawable/selector_item_press_gray"
+            android:paddingLeft="@dimen/general_margin"
+            android:paddingRight="@dimen/general_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:text="历史留言"
+                android:textColor="@color/color_1C1C1C"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@color/color_FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:focusable="true"
+                android:layout_margin="15dp"
+                android:focusableInTouchMode="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+
+                app:cardBackgroundColor="@color/color_f3faff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="120"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false"
+                    android:padding="15dp"
+                    app:passwordToggleEnabled="true"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:hint="我想说些什么……（不少于5个字符）"
+                        android:id="@+id/et"
+                        android:maxLength="120"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:gravity="top|left"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="120dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="@dimen/general_margin"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_btn_c25_theme_press"
+                android:text="留言"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/tvTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:srlEnablePureScrollMode="true"-->
+        <!--app:srlEnableLoadMore="true"-->
+        <!--app:srlDragRate="0.75">-->
+      <!---->
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+
+
+
+</LinearLayout>

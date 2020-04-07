@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_F7FDFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SearchLocationActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/statusbar_view_height"/>
+
+    <include layout="@layout/common_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<com.amap.api.maps.TextureMapView-->
+            <!--android:id="@+id/mapView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.amap.api.maps.SupportMapFragment" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/color_FFFFFF"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_poi_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTop"
+                        android:textSize="14sp"
+                        android:text="中威大厦"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvBottom"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10sp"
+                        android:text="广东省-东莞市-南城区-莞太大道113号附近"
+                        android:textColor="@color/color_ABABAB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_width="158dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/selector_btn_c25_theme_press"
+            android:text="确认位置"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="18sp" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

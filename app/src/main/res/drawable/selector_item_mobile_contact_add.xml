@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:shape="rectangle">
+        <!--选中状态-->
+        <shape >
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/color_theme_press" />
+        </shape>
+    </item>
+
+
+
+    <item android:state_enabled="false" android:shape="rectangle">
+        <!--选中状态-->
+        <shape >
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/color_divider" />
+        </shape>
+    </item>
+    <!--默认状态-->
+    <item android:state_selected="false"  android:shape="rectangle">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/color_theme" />
+        </shape>
+    </item>
+</selector>

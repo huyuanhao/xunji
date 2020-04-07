@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_dialog_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:src="@mipmap/icon_emoji_fail" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="未解锁该功能！马上解锁开启好友实时位置和历史记录等功能吧~"
+            android:textColor="@color/color_1C1C1C"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/bottom_button_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_divider" />
+
+        <LinearLayout
+            android:id="@+id/bottom_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:divider="@drawable/common_dialog_v_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+
+            <Button
+                android:id="@+id/dialog_left_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_dialog_left_button"
+                android:gravity="center"
+                android:text="@string/btn_cancel"
+                android:textColor="@drawable/selector_tv_theme_press"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/dialog_right_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_dialog_right_button"
+                android:gravity="center"
+                android:text="去解锁"
+                android:textColor="@drawable/selector_tv_theme_press"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+

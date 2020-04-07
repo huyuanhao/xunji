@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CareFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_FFFFFF"
+            android:layout_height="@dimen/statusbar_view_height"/>
+
+        <include layout="@layout/common_title"/>
+
+        <FrameLayout
+            android:id="@+id/base_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvEmergency"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:layout_width="112dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/color_FFFFFF"-->
+<!--        android:text="紧急警报"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="@mipmap/icon_emergency_bg"-->
+<!--        android:layout_height="40dp"-->
+<!--        />-->
+
+
+    <ImageView
+        android:id="@+id/ivEmergency"
+        android:layout_gravity="bottom"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="25dp"
+        android:src="@mipmap/icon_emergency_bg"
+        android:layout_width="45dp"
+        android:layout_height="60dp"/>
+
+
+</FrameLayout>

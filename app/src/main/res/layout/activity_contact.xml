@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ContactActivity">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/statusbar_view_height"/>
+    <include layout="@layout/common_title"/>
+
+    <FrameLayout
+        android:id="@+id/base_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/lv"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            tools:listitem="@layout/item_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <include layout="@layout/load_base_empty"/>
+
+
+        <TextView
+            android:id="@+id/tvAddContact"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_btn_c25_theme_press"
+            android:drawableLeft="@mipmap/icon_contact_add"
+            android:paddingLeft="12dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="添加联系人"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="18sp" />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_submit"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="160dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_gravity="center_horizontal|bottom"-->
+            <!--android:background="@drawable/selector_btn_c25_theme_press"-->
+            <!--android:text="添加关心的人"-->
+            <!--android:textColor="@color/color_FFFFFF"-->
+            <!--android:textSize="18sp" />-->
+
+    </FrameLayout>
+</LinearLayout>

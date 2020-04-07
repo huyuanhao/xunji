@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LoanTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="MyPermissionDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+
+
+    <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+    <style name="DialogActivity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@style/pop_bot_style</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="pop_bot_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_bot_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_bot_anim</item>
+    </style>
+</resources>

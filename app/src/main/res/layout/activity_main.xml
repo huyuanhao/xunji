@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+
+    >
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:background="@color/color_common_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_divider" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:src="@mipmap/teb_s_1"
+                style="@style/teb_main_iv" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:textColor="@color/color_theme"
+                android:text="关心的人"
+                style="@style/teb_main_text" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_2"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:id="@+id/iv_2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/teb_n_2"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                style="@style/teb_main_text"
+                android:text="轨迹"
+                />
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="bottom|center_horizontal"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_2"-->
+        <!--android:layout_width="75dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:src="@mipmap/teb_n_2"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_2"-->
+
+        <!--style="@style/teb_main_text"-->
+        <!--android:text="轨迹"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_3"
+                style="@style/teb_main_iv"
+                android:src="@mipmap/teb_n_3"
+                />
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/teb_main_text"
+                android:text="我的"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

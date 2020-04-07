@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/icon_idea_state_n" android:state_checked="false" />
+    <item android:drawable="@mipmap/icon_idea_state_s"  android:state_checked="true"/>
+</selector>

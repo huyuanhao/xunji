@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:color="@color/color_ABABAB" android:state_enabled="true"></item>
+    <item android:color="@color/color_theme" android:state_enabled="false"></item>
+</selector>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/icon_borrow_bt_bg_s" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/icon_borrow_bt_bg_n" android:state_pressed="false"></item>
+</selector>-->

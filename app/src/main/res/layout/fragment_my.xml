@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyFragment">
+
+
+    <LinearLayout
+        android:background="#F7FDFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_FFFFFF"
+            android:layout_height="@dimen/statusbar_view_height"/>
+        <include layout="@layout/common_title"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              >
+
+
+
+                <LinearLayout
+                    android:id="@+id/llLogin"
+                    android:orientation="horizontal"
+                    android:background="@color/color_FFFFFF"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+                    <ImageView
+                        android:id="@+id/ivIcon"
+                        android:src="@mipmap/icon_setting_avatar"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_marginLeft="15dp"
+                        android:text="登录"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/tvChangeName"
+                        android:layout_marginLeft="15dp"
+                        android:text="修改昵称"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_ABABAB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvWeb"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="我的轨迹"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlVip"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tvVip"
+                                    android:text="解锁功能"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/color_1C1C1C"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    />
+                                <ImageView
+                                    android:id="@+id/ivVip"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/selector_my_vip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <TextView
+                                tools:visibility="visible"
+                                android:visibility="gone"
+                                android:id="@+id/tvExpireTime"
+                                android:textSize="10sp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/color_ABABAB"
+                                android:text="到期时间：2019-12-03 12:30"
+                                android:layout_width="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivLockMore"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/icon_lock_n"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                        <TextView
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/tvContinueVip"
+                            android:layout_width="50dp"
+                            android:gravity="center"
+                            android:layout_height="28dp"
+                            android:background="@drawable/selector_btn_c25_theme_press"
+                            android:text="续费"
+                            android:textColor="@color/color_FFFFFF"
+                            android:textSize="15sp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/tvContact"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="紧急联系人"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlNews"
+                        android:background="@drawable/selector_item_press_gray"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:id="@+id/tvNews"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="我的消息"
+                            android:gravity="center_vertical"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_1C1C1C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/tvFriendTip"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:textColor="#F54058"
+                            android:text="您有新的好友信息"
+                            android:gravity="center_vertical"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvIdea"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="客服支持"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+
+
+                <!--                    android:layout_marginTop="10dp"-->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvStar"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="五星好评"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+
+                    <TextView
+
+                        android:id="@+id/tvShare"
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="分享"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_1C1C1C"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_logout"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:background="@drawable/selector_item_press_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="退出登录"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="#F54058"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+</FrameLayout>

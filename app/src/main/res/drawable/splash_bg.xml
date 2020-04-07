@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/color_FFFFFF" />
+    </item>
+    <item android:top="150dp"  android:height="120dp" android:width="120dp"
+        android:gravity="center_horizontal">
+        <!--aicon_launcher_dai-->
+        <bitmap
+            android:dither="true"
+            android:filter="true"
+            android:src="@mipmap/icon_splash_logo"
+            />
+
+    </item>
+</layer-list>
+<!--<bitmap xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:src="@mipmap/icon_launcher"-->
+    <!--android:dither="true"-->
+    <!--android:filter="true"-->
+    <!--android:tileMode="disabled"-->
+    <!--android:gravity="top" />-->

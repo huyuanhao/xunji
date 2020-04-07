@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:src="@mipmap/icon_warn_empty"
+        android:layout_width="270dp"
+        android:layout_height="270dp" />
+
+    <Button
+        android:layout_marginTop="120dp"
+        android:id="@+id/emptyClick"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_btn_c25_theme_press"
+        android:text="创建位置提醒"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/tvDistanceWarn"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_5d5d5d"
+        android:layout_marginBottom="60dp"
+        android:text="@string/distance_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+

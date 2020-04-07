@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="color_theme">#008577</color>-->
+    <!--<color name="color_theme_press">#008577</color>-->
+    <color name="color_5D5D5D">#5D5D5D</color>
+    <color name="COLOR_1C1C1C">#23D7AF</color>
+    <color name="color_normal_press">#22cccccc</color>
+    <color name="color_divider">#4D808080</color>
+    <!--<color name="colorPrimary">#007eff</color>-->
+
+
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+</resources>

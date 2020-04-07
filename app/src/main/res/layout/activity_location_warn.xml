@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".ui.LastTrackActivity">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="@dimen/statusbar_view_height"/>
+    <include layout="@layout/common_title"/>
+
+
+    <FrameLayout
+        android:id="@+id/base_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.amap.api.maps.SupportMapFragment" />
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/color_FFFFFF"
+            app:cardElevation="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                tools:listitem="@layout/item_location_warn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btNewWarn"
+            android:layout_width="160dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_btn_c25_theme_press"
+            android:text="创建位置提醒"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="17sp" />
+
+        <!--<include layout="@layout/layout_empty_location_warn"/>-->
+    </FrameLayout>
+</LinearLayout>

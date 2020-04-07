@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">寻迹</string>
+ 
+    <string name="digits">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`-=[]\;,./~!@#$%^*()_+}{:?&amp;&lt;&gt;&#34;&apos;\"</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="distance_warn">创建位置提醒后，TA每次到达或者离开该位置 %1$d米范围内，您都会收到通知 （最多可设置三个位置）</string>
+    <string name="agree_app_user_des">《%1$sAPP用户服务协议》</string>
+    <string name="agree_vip_des">《%1$s付费会员协议》</string>
+    <string name="title_web_vip">%1$s付费会员协议</string>
+    <string name="title_web_use">%1$sAPP用户服务协议</string>
+
+</resources>

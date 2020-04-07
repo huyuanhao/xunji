@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingLeft="20dp"
+    android:gravity="bottom"
+    android:paddingRight="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_save_pic"
+        >
+        <TextView
+            android:background="@drawable/selector_item_press_gray"
+
+            android:id="@+id/tvUnbinder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="解除好友"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commonDivider"
+            android:background="@color/color_divider" />
+
+        <TextView
+            android:background="@drawable/selector_item_press_gray"
+            android:id="@+id/tvWarn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="位置提醒"
+            android:textColor="@color/color_F5445C"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

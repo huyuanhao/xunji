@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android">
+
+    // 以下参数是4种动画效果的公共属性,即都有的属性
+    android:duration="3000" // 动画持续时间（ms），必须设置，动画才有效果
+    android:startOffset ="1000" // 动画延迟开始时间（ms）
+    android:fillBefore = "true" // 动画播放完后，视图是否会停留在动画开始的状态，默认为true
+    android:fillAfter = "false" // 动画播放完后，视图是否会停留在动画结束的状态，优先于fillBefore值，默认为false
+    android:fillEnabled= "true" // 是否应用fillBefore值，对fillAfter值无影响，默认为true
+    android:repeatMode= "restart" // 选择重复播放动画模式，restart代表正序重放，reverse代表倒序回放，默认为restart|
+    android:repeatCount = "0" // 重放次数（所以动画的播放次数=重放次数+1），为infinite时无限重复
+
+    // 以下参数是透明度动画特有的属性
+    android:fromAlpha="1.0" // 动画开始时视图的透明度(取值范围: -1 ~ 1)
+    android:toAlpha="0.0"// 动画结束时视图的透明度(取值范围: -1 ~ 1)
+
+</alpha>

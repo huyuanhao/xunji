@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/view_error"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:src="@mipmap/icon_load_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="?attr/color_theme"
+            />
+
+        <TextView
+            android:text="呃~加载失败了~"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:textColor="?attr/color_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_error_again"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/selector_btn_c25_theme_press"
+            android:layout_width="100dp"
+            android:text="重新加载"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_height="35dp" />
+        <!--<Button-->
+            <!--android:layout_marginTop="@dimen/x90"-->
+            <!--android:id="@+id/bt_error_again"-->
+            <!--android:foreground="?attr/selectableItemBackground"-->
+            <!--android:text="重新加载"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+
+
+</FrameLayout>

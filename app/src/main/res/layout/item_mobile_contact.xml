@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="50dp"
+    >
+
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:text="我吃西红柿我吃西红柿"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_1C1C1C"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvPhone"
+
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:layout_centerInParent="true"
+            android:text="13800138000"
+            android:textColor="@color/color_1C1C1C"
+            android:layout_height="wrap_content" />
+
+      <TextView
+          android:id="@+id/tvAdd"
+          android:layout_alignParentRight="true"
+          android:text="添加"
+          android:textSize="13sp"
+          android:gravity="center"
+          android:textColor="@color/color_FFFFFF"
+          android:layout_centerVertical="true"
+          android:background="@drawable/selector_item_mobile_contact_add"
+          android:layout_width="65dp"
+          android:layout_height="28dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+

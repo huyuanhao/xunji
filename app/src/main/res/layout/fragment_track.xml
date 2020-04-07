@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TrackFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@color/color_FFFFFF"-->
+            <!--android:layout_height="@dimen/statusbar_view_height"/>-->
+        <!--<include layout="@layout/common_title"/>-->
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/activity_track_service_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/rlCardInfo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/icon_care_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/icon_avatar_deafult" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:includeFontPadding="false"
+                            tools:text="小小小小小小小小小小小小小"
+                            android:singleLine="true"
+                            android:maxEms="6"
+                            android:ellipsize="end"
+                            android:textColor="@color/color_1C1C1C"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:includeFontPadding="false"
+                            android:text="05-20 11:00:00"
+                            android:textColor="@color/color_ABABAB"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvLast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2"
+                        tools:text="最后位置：东莞市南城区莞太大道113号中威大厦附近"
+                        android:textColor="@color/color_ABABAB"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvDeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@drawable/selector_tv_theme_press"
+                    android:text="轨迹"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/ivLocation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom"
+        android:src="@mipmap/icon_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

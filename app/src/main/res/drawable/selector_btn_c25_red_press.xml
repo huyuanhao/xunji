@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+
+    <item android:state_pressed="true"  >
+        <shape  >
+            <corners android:radius="25dp"/>
+           <solid android:color="#FA9FAB"/>
+        </shape>
+    </item>
+    <item android:state_selected="true"  >
+        <shape  >
+            <corners android:radius="25dp"/>
+            <solid android:color="#FA9FAB"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="25dp"/>
+            <solid android:color="@color/color_F5445C"/>
+
+        </shape>
+    </item>
+
+
+    <!--<item android:state_enabled="true">-->
+        <!--<shape>-->
+            <!--<corners android:bottomRightRadius="@dimen/repayCorner" android:topRightRadius="@dimen/repayCorner"/>-->
+            <!--<solid android:color="@android:color/transparent" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--&lt;!&ndash;默认状态&ndash;&gt;-->
+    <!--<item android:state_selected="false">-->
+        <!--<shape>-->
+            <!--<corners android:radius="@dimen/x5" />-->
+            <!--<solid android:color="@color/color_ffffff" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+
+
+
+
+</selector>

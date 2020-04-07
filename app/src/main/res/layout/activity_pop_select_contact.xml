@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingLeft="10dp"
+    android:gravity="bottom"
+    android:paddingRight="20dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_save_pic"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="添加紧急联系人（最多三位）"
+                android:textSize="17sp"
+                android:textColor="@color/color_1C1C1C"
+                android:layout_height="63dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/commonDivider"
+                android:background="@color/color_divider" />
+
+            <TextView
+                android:background="@drawable/selector_item_press_gray"
+                android:id="@+id/tvPopContact"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:text="手机通讯录"
+                android:textColor="@drawable/selector_tv_theme_press"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/commonDivider"
+                android:background="@color/color_divider" />
+
+            <TextView
+                android:background="@drawable/selector_item_press_gray"
+                android:id="@+id/tvPopFriend"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:text="您当前的好友"
+                android:textColor="@drawable/selector_tv_theme_press"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_save_pic"
+            >
+            <TextView
+                android:background="@drawable/selector_item_press_gray"
+                android:id="@+id/tvPopCancel"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_F5445C"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

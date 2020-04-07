@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rlTitleLayout"
+    android:background="@color/color_FFFFFF"
+    android:layout_height="@dimen/titleHeigh"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTitleLeft"
+        android:background="@drawable/selector_item_press_gray"
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/ivTitleLeft"
+            android:src="@mipmap/icon_back_arrow_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_centerInParent="true"
+        tools:text="我的"
+        android:textColor="@color/color_1C1C1C"
+        android:textSize="@dimen/titleSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/rlTitleRight"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_item_press_gray"
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+        <ImageView
+
+            android:layout_centerInParent="true"
+            android:id="@+id/ivTitleRight"
+            android:src="@mipmap/icon_news"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/ivRemind"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+            android:layout_width="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_new_remind"
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="#d9d9d9"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        />
+
+</RelativeLayout>

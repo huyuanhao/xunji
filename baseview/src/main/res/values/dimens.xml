@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="titleRight">14sp</dimen>
+    <dimen name="titleHeigh">44dp</dimen>
+    <dimen name="titleElevation">1dp</dimen>
+    <dimen name="toolRowPadding">15dp</dimen>
+    <dimen name="common_dialog_corner_radius">5dp</dimen>
+    <dimen name="general_margin">15dp</dimen>
+
+
+</resources>

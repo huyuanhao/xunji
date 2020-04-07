@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="250dp">
+
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="270dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_experience_bg"
+            android:layout_width="270dp"
+            android:layout_height="250dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="140dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvContent"
+                android:gravity="center"
+                android:textColor="@color/color_1C1C1C"
+                tools:text="新用户三天免费体验！"
+                app:autoSizeMinTextSize="3sp"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                />
+            <View
+                android:background="@color/color_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/tvStart"
+                android:gravity="center"
+                android:text="现在开启"
+                android:textSize="17sp"
+                android:textColor="@color/color_theme"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>
+
+

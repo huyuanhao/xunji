@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@mipmap/guide_4"
+        android:scaleType="fitStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <FrameLayout-->
+<!--        -->
+<!--        android:visibility="gone"-->
+<!--        tools:visibility="visible"-->
+<!--        android:id="@+id/fl_come"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llContent"-->
+<!--            android:paddingBottom="100dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:src="@mipmap/icon_guide_unlock"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/color_1C1C1C"-->
+<!--                android:text="实时位置和历史轨迹记录"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/color_1C1C1C"-->
+<!--                android:text="到达、离开某位置提醒"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="21dp"-->
+<!--                android:textColor="@color/color_5d5d5d"-->
+<!--                android:textSize="13sp"-->
+<!--                android:text="开启7天免费试用"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <TextView-->
+<!--                android:textColor="@color/color_ABABAB"-->
+<!--                android:textSize="10sp"-->
+<!--                android:text="之后自动续费 ¥28.00/周"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvSubmit"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:background="@drawable/selector_btn_c25_theme_press"-->
+<!--                android:gravity="center"-->
+<!--                android:text="马上体验"-->
+<!--                android:textColor="@color/color_FFFFFF"-->
+<!--                android:textSize="18sp" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvExplain"-->
+<!--                android:layout_marginLeft="28dp"-->
+<!--                android:layout_marginRight="28dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textColor="@color/color_ABABAB"-->
+<!--                android:text="除非自动续订关闭，否则免费试用期的订阅将自动续订为付费订阅。付款将在确认购买时从iTunes帐户中扣除。除非在当前期间结束前至少24小时关闭自动续订，否则订阅会自动续订。帐户将在当前期间结束前24小时内收取续订费用。购买后，可以通过访问手机的“帐户设置”来管理订阅并关闭自动续订功能。免费试用期的任何未使用部分将在您购买其他订阅时被没收。"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </LinearLayout>-->
+
+<!--    </FrameLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_marginTop="@dimen/statusbar_view_height"
+        android:background="@drawable/selector_item_press_gray"
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+        <ImageView
+
+            android:layout_centerInParent="true"
+            android:id="@+id/ivTitleLeft"
+            android:src="@mipmap/guide_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

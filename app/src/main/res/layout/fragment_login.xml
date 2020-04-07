@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:divider="@drawable/shape_divider_theme_press"
+        android:orientation="vertical"
+        android:showDividers="middle|end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_login_phone" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:textColor="@color/color_theme"
+                android:textColorHint="@color/color_theme_press"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_login_password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="60dp"
+                android:background="@null"
+                android:gravity="center"
+                android:digits="@string/digits"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:textColor="@color/color_theme"
+                android:textColorHint="@color/color_theme_press"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivEyes"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/selector_login_eyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:text="忘记密码?"
+        android:textColor="@drawable/selector_tv_theme_press"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_btn_c25_theme_press"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

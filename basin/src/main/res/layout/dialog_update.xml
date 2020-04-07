@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_update_dialog_bg"
+    android:orientation="vertical">
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="应用更新"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:text="应用更新"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="检测到新版本, 请立即更新！"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            tools:text="检测到新版本, 请立即更新！" />
+
+        <!--<com.daimajia.numberprogressbar.NumberProgressBar-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/progress_bar"-->
+            <!--app:progress_unreached_color="#CCCCCC"-->
+            <!--app:progress_reached_color="#3498DB"-->
+            <!--app:progress_unreached_bar_height="3dp"-->
+            <!--app:progress_text_size="10sp"-->
+            <!--app:progress_text_color="#3498DB"-->
+            <!--app:progress_text_offset="1dp"-->
+            <!--app:progress_text_visibility="visible"-->
+            <!--app:progress_max="100"-->
+            <!--app:progress_current="0"-->
+            <!--app:progress_reached_bar_height="4dp"-->
+            <!--style="@style/NumberProgressBar_Default"-->
+            <!--/>-->
+        <!--<com.daimajia.numberprogressbar.NumberProgressBar-->
+        <!--android:id="@+id/number_progress_bar"-->
+        <!--style="@style/NumberProgressBar_Default"-->
+        <!--android:visibility="gone"/>-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_button_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/app_update_item_divider" />
+
+    <LinearLayout
+        android:id="@+id/bottom_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:divider="@drawable/app_update_item_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_update_dialog_left_button"
+            android:gravity="center"
+            android:text="稍后更新"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_update_dialog_right_button"
+            android:gravity="center"
+            android:text="更新"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+</LinearLayout>

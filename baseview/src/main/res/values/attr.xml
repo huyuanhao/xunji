@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- slide bar 有效内容背景 -->
+    <!--<attr name="colorPrimary" format="color|reference" />-->
+    <!-- slide bar　描边 -->
+    <attr name="color_theme" format="color|reference"  />
+    <attr name="color_theme_press" format="color|reference" />
+
+
+</resources>
