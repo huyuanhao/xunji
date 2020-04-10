@@ -154,7 +154,7 @@ public class RegisterActivity extends AbsCommonActivity<RegisterPresenter> imple
             case R.id.tvAgreement:
                 String web_use = getResources().getString(R.string.title_web_use);
                 String title_use = String.format(web_use, getResources().getString(R.string.app_name));
-                MyWebViewActivity.startTo(mActivity, Constants.LOGIN_URL_USE, title_use, title_use);
+                MyWebViewActivity.startTo(mActivity, Constants.AGREEMENT_URL_USER, title_use, title_use);
  
 
                 break;

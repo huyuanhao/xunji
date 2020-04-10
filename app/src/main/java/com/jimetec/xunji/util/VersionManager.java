@@ -7,6 +7,7 @@ import com.common.lib.utils.SpUtil;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.jimetec.basin.event.LoanEventDataUtil;
+import com.jimetec.xunji.Constants;
 import com.jimetec.xunji.bean.VersionInfo;
 import com.jimetec.xunji.http.URLs;
 
@@ -40,6 +41,13 @@ public class VersionManager {
         if (null != loanInfo) {
             //将user保存到本地
             this.mVersionInfo = loanInfo;
+            Constants.AGREEMENT_URL_USER = loanInfo.useren;
+            Constants.AGREEMENT_URL_PRIVACY = loanInfo.userprivate;
+            Constants.LOGIN_URL_COST = loanInfo.userpayment;
+            LogUtils.e("save   user" + loanInfo.useren);
+            LogUtils.e("save   user" + loanInfo.userprivate);
+            LogUtils.e("save   user" + loanInfo.userpayment);
+
             LogUtils.e("save   user" + loanInfo.toString());
             save();
         }

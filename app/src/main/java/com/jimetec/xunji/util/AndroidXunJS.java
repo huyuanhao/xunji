@@ -137,7 +137,7 @@ public class AndroidXunJS {
 
     @JavascriptInterface
     public void toWebUser() {
-        MyWebViewActivity.startTo(mActivity, Constants.LOGIN_URL_USE, "用户协议", "用户协议");
+        MyWebViewActivity.startTo(mActivity, Constants.AGREEMENT_URL_USER, "用户协议", "用户协议");
     }
 
 

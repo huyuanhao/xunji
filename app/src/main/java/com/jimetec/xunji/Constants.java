@@ -34,12 +34,13 @@ public class Constants {
 //    public static final String LOGIN_URL_COST = "https://xunji.jimetec.com/dist/paymentAgreement.html";//曾经是否展示过欢迎页面
 
 
-    public static final String LOGIN_URL_USE = "https://xunji.jimetec.com/dist/userAgreement.html";//曾经是否展示过欢迎页面
-    public static final String LOGIN_URL_COST = "https://xunji.jimetec.com/dist/paymentAgreement.html";//曾经是否展示过欢迎页面
-    public static final String AGREEMENT_URL_PRIVACY = "https://xunji.jimetec.com/dist/agreement.html";//隐私协议
-    public static final String AGREEMENT_URL_USER = "https://xunji.jimetec.com/dist/userAgreement.html";//用户协议
-
-
+//    public static final String LOGIN_URL_USE = "https://xunji.jimetec.com/dist/userAgreement.html";//曾经是否展示过欢迎页面
+//    public static final String LOGIN_URL_COST = "https://xunji.jimetec.com/dist/paymentAgreement.html";//付费会员服务协议
+//    public static final String AGREEMENT_URL_PRIVACY = "https://xunji.jimetec.com/dist/agreement.html";//隐私协议
+//    public static final String AGREEMENT_URL_USER = "https://xunji.jimetec.com/dist/userAgreement.html";//用户协议
+    public static String AGREEMENT_URL_PRIVACY = "";//隐私协议
+    public static String AGREEMENT_URL_USER = "";//用户协议
+    public static String LOGIN_URL_COST = "";//付费会员服务协议
 
 
     public static final String TEST_DEBUG = "TEST_DEBUG";//曾经是否展示过欢迎页面

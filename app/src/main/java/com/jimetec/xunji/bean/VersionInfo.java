@@ -53,6 +53,9 @@ public class VersionInfo {
     public String shareTitle = "";
     public String shareContent = "";
     public String shareUrl = "";
+    public String useren="";
+    public String userprivate = "";
+    public String userpayment = "";
     public List<MyModuleBean> information;
 
 //"information": [{

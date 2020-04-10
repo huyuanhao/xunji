@@ -27,7 +27,7 @@ public class WelcomeActivity extends BaseActivity {
     public static final String isPreVip = "isPreVip";
     @BindView(R.id.vp)
     ViewPager mVp;
-    int[] indexs = new int[]{R.mipmap.guide_1, R.mipmap.guide_2, R.mipmap.guide_3};
+    int[] indexs = new int[]{R.mipmap.guide_1, R.mipmap.guide_2, R.mipmap.guide_3,R.mipmap.guide_4};
 //    @BindView(R.id.fl_come)
 //    FrameLayout mFlCome;
     @BindView(R.id.rl_right)
