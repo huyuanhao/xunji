@@ -160,7 +160,7 @@ public class WelcomeActivity extends BaseActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             ImageView imageView = new ImageView(WelcomeActivity.this);
             imageView.setImageResource(indexs[position]);
-            imageView.setScaleType(ImageView.ScaleType.FIT_START);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             container.addView(imageView);//千万别忘记添加到container
             return imageView;
         }
