@@ -60,7 +60,7 @@ android {
             variant ->
                 variant.outputs.all {
                     //这里修改apk文件名
-                    outputFileName = "${variant.productFlavors[0].name}_V${variant.productFlavors[0].versionCode}.apk"
+                    outputFileName = "${variant.productFlavors[0].name}_V${variant.productFlavors[0].versionCode}_${rootProject.ext.DEf_CHANNEL_INT}.apk"
                 }
         }
 

@@ -40,7 +40,8 @@ ext {
     versionCode = 101
     versionName = '1.0.1'
     applicationId = 'com.jimetec.xunji'
-    DEf_CHANNEL = '"guanfang"'
+    DEf_CHANNEL = '"9"'
+    DEf_CHANNEL_INT = 9
     DEF_EFROM = '"xunji"'
 
 
